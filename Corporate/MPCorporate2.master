@@ -1,0 +1,121 @@
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MPCorporate2.master.cs" Inherits="Corporate_MPCorporate2" %>
+<%@ Register Src="../UserControl/HomePageBottom.ascx" TagName="HomePageBottom" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>&nbsp;</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/table.css" rel="stylesheet" type="text/css" />        
+    <script type="text/JavaScript" src="../Menu/qm.js"></script>
+	<style type="text/css">.qmfv{visibility:hidden !important;}</style><script type="text/JavaScript">var qmad = new Object();qmad.bvis="";qmad.bhide="";</script>
+	<!-- Add-On Settings -->
+	<script type="text/JavaScript">
+		/*Menu 0 Settings*/
+		var a = qmad.qm0 = new Object();
+	
+		a.slide_animation_frames = 20;
+		a.slide_accelerator = 1;
+
+		a.slide_left_right = true;
+		a.slide_sub_subs_left_right = true;
+
+		a.slide_offx = 0;
+		a.slide_offy = 1;
+
+		a.slide_drop_subs = false;
+		a.slide_drop_subs_height = 100;
+		a.slide_drop_subs_disappear = false;
+	</script>
+	<!-- Optional Add-On's (Must appear after core menu code) -->
+	<script type="text/JavaScript" src="../Menu/qm_slide_effect.js"></script>
+    <link href="../Menu/qm.css" rel="stylesheet" type="text/css" />     
+    <link href="../CSS/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<form id="form1" runat="server">
+<!--BEGIN: PAGE HEADER-->
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+    <td style="height: 83px"><img src="../images/logo.gif" width="260" height="91" alt="" /></td>
+    <td width="100" valign="top" style="height: 83px">
+    <%--<table width="100" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+        <td style="height: 35px; width: 5px;"><img src="../images/location_left.gif" width="5" height="35" alt="" /></td>
+        <td class="location1" style="height: 35px"><div class="display_location"></div></td>
+        <td width="5" style="height: 35px"><img src="../images/location_right.gif" width="5" height="35" alt="" /></td>
+        </tr>
+    </table>--%>
+    </td>
+    </tr>
+</table>
+<!--END: PAGE HEADER-->
+<!--BEGIN: TOP MENU-->
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" class="top_links">
+    <tr>
+    <td width="5"><img src="../images/top_link_left.gif" width="5" height="41" alt="" /></td>
+    
+    <td>
+    <div>
+    <a href="../Default.aspx">Home</a>
+    <a href="#"><u>For Seller</u></a>
+    <a href="../Classifieds_Buyers.aspx">For Buyers</a>
+    <a href="#">My Boromela</a>    
+    <a href="../Classifieds/Default.aspx"><img alt="" src="../images/free_2.gif" width="37" height="28" border="0" class="free" />Post Classified Ad.</a>
+    <a href="../Help.aspx">Help</a>    
+    </div>
+    </td>
+    
+    <td width="235">&nbsp;</td>
+    <td width="5"><img src="../images/top_link_right.gif" width="5" height="41" alt="" /></td>
+    </tr>
+</table>
+<!--END: TOP MENU-->
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+    <td width="170" valign="top" class="left_link_bg">
+    <div id="qm0" class="qmmc left_link">
+        <a href="ControlPanel.aspx" <%if (this.intActiveModule == 1){ %>class="title" <%} %>>My Boromela</a>
+        <a href="UserProfile_Edit.aspx" <%if (this.intActiveModule == 2){ %>class="title" <%} %>>Edit User Profile</a>                
+        
+                 
+        <a href="#" <%if (this.intActiveModule == 4){ %>class="title" <%} %>>Sells Lead</a>
+            <div>
+                <a href="SellLead_General.aspx">General Items</a>
+                <a href="SellLead_Books.aspx">Books</a>
+            </div>                 
+        <a href="#">Reference Fee</a>
+        <a href="UserProfile_ChangeLoginInfo.aspx" <%if (this.intActiveModule == 6){ %>class="title" <%} %>>Change Password</a>        
+        <a href="ContactUs.aspx" <%if (this.intActiveModule == 7){ %>class="title" <%} %>>Contact boromela.com</a>
+    </div>
+        &nbsp; &nbsp; &nbsp; &nbsp;
+    </td>
+    <td valign="top" style="padding-left:15px;padding-top:10px;padding-right:0px">
+    <div align="right" class="top_secondary_link">
+        <!--a href="#">I want to signup as a General User</a> |
+        <a href="#">Switch to General User Control Panel</a> |-->
+        <a href="Default.aspx">Sign out</a>
+    </div>
+    <!--BEGIN: PAGE CONTENT-->
+    <asp:ScriptManager id="ScriptManager1" runat="server"></asp:ScriptManager>
+    <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+    </asp:contentplaceholder>
+    <!--END: PAGE CONTENT-->    
+    </td>
+    </tr>
+</table>
+<!--BEGIN: PAGE FOOTER-->
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+    <td height="56"><br />
+        <uc1:HomePageBottom ID="HomePageBottom1" runat="server" />
+    </td>
+    </tr>
+</table>    
+<!--END: PAGE FOOTER-->
+</form>
+<script type="text/JavaScript">qm_create(0,true)</script>
+</body>
+</html>

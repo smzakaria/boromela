@@ -1,0 +1,67 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MPCorporate1.master.cs" Inherits="Corporate_MPCorporate1" %>
+<%@ Register Src="../UserControl/HomePageBottom.ascx" TagName="HomePageBottom" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>&nbsp</title>
+    
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/table.css" rel="stylesheet" type="text/css" />    
+    <link href="../CSS/style.css" rel="stylesheet" type="text/css" />
+    
+</head>
+
+<body>
+<form id="form1" runat="server">
+<!--BEGIN: PAGE HEADER-->
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+    <td><img src="../images/logo.gif" width="260" height="91" alt="" /></td>
+    <td width="314" valign="top">&nbsp;</td>
+    </tr>
+</table>
+<!--END: PAGE HEADER-->
+
+<!--BEGIN: TOP MENU-->
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" class="top_links">
+    <tr>
+    <td width="5"><img src="../images/top_link_left.gif" width="5" height="41" alt="" /></td>
+    
+    <td>
+    <div>
+    <a href="../Default.aspx">Home</a>
+    <a href="../Corporate/Default.aspx"><u>For Seller</u></a>
+    <a href="../Classifieds_Buyers.aspx">For Buyers</a>
+    <a href="../MyBoromelaLogin.aspx">My Boromela</a>    
+    <a href="../Classifieds/Default.aspx"><img alt="" src="../images/free_2.gif" width="37" height="28" border="0" class="free" />Post Classified Ad.</a>
+    <a href="../Help.aspx">Help</a>    
+    </div>
+    </td>
+    
+    <td width="235">&nbsp;</td>
+    <td width="5"><img src="../images/top_link_right.gif" width="5" height="41" alt="" /></td>
+    </tr>
+</table>
+<!--END: TOP MENU-->
+
+<!--BEGIN: PAGE CONTENT-->
+<asp:ScriptManager id="ScriptManager1" runat="server"></asp:ScriptManager>
+<asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+</asp:contentplaceholder>
+<!--END: PAGE CONTENT-->
+
+<!--BEGIN: PAGE FOOTER-->
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+    <td height="56">
+    <br />
+        <uc1:HomePageBottom ID="HomePageBottom1" runat="server" />
+    </td>
+    </tr>
+</table>
+<!--END: PAGE FOOTER-->
+</form>
+</body>
+</html>

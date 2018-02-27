@@ -1,0 +1,587 @@
+/* Designer: Raihan A.K. raihan@rakplanet.com */
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	font-family:verdana;
+	font-size:12px;
+	color:#505050;
+}
+.top_links{
+	background-image:url(../images/top_link_bg.gif);
+	background-repeat:repeat-x;
+}
+.top_links div{
+	margin-left:20px;
+}
+.top_links div a{
+	display:block;
+	float:left;
+	padding-left:25px;
+	padding-right:25px;
+	padding-top:12px;
+	height:27px;
+	margin-top:1px;
+	
+	background-image:url(../images/top_link_seperator.gif);
+	background-position:right;
+	background-repeat:no-repeat;
+	
+	text-align:center;
+	vertical-align:middle;
+	
+	font-family:verdana;
+	font-size:12px;
+	color:#FFFFFF;
+	font-weight:bold;
+	text-decoration:none;
+}
+.top_links div .selected{
+	display:block;
+	float:left;
+	padding-left:25px;
+	padding-right:25px;
+	padding-top:15px;
+	height:28px;
+	margin-top:-1px;
+	
+	background-image:url(../images/top_link_bg_selected.gif);
+	background-position:right;
+	background-repeat:repeat-x;
+	
+	text-align:center;
+	vertical-align:middle;
+	
+	font-family:verdana;
+	font-size:12px;
+	color:#ff0000;
+	font-weight:bold;
+	text-decoration:none;
+}
+.free{
+	position:absolute; 
+	margin-top:-30px;
+}
+
+.top_search{
+	border:0px solid #c9d8ff;
+	height:13px;
+	width:169px;
+	
+	background-image:url(../images/search_bg.gif);
+	background-repeat:no-repeat;
+
+	padding:5px;
+	padding-right:0px;
+
+	vertical-align:middle;
+	padding-left:30px;
+	
+	font-family:verdana;
+	font-size:11px;
+	color:#999999;
+	background-attachment:inherit;
+	_background-attachment:fixed;
+}
+.location{
+	background-color:#e4ebff;
+	padding-left:5px;
+	padding-right:5px;
+}
+.location .display_location{
+	font-family:verdana;
+	font-size:12px;
+	color:#919193;
+	float:left;
+}
+.location a{
+	font-family:verdana;
+	font-size:10px;
+	color:#537bdc;
+	float:right;
+	text-decoration:none;
+}
+.copyright{
+float:left;
+padding-top:22px;
+padding-left:20px;
+}
+.bottom_link{
+	font-family:verdana;
+	font-size:12px;
+	color:#627ebc;
+	text-decoration:none;
+	float:right;
+	padding-top:20px;
+	padding-right:20px;
+	
+}
+.bottom_link a{
+	font-family:verdana;
+	font-size:12px;
+	color:#627ebc;
+	text-decoration:none;
+}
+.bottom_link a:hover{
+	color:#FF0000;
+}
+a{
+	font-family:verdana;
+	color:#004B91;
+	text-decoration:none;
+}
+
+.bold_link{
+	font-family:verdana;
+	font-size:12px;
+	text-decoration:none;
+	font-weight:bold;
+	color:#505050;
+}
+
+.greeting{
+	font-family:verdana;
+	font-size:12px;
+	color:#627ebc;
+	text-decoration:none;
+	font-weight:bold;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.txt_new_ad{
+	font-size:11px;
+}
+.txt_new_ad .keys{
+	color:#365ebf;
+}
+.txt_new_ad .values{
+	color:#365ebf;
+}
+
+.txt_new_ad{
+	font-size:11px;
+}
+.bullet_review{
+	padding-left:8px;
+	margin-left:8px;
+	font-size:11px;
+	list-style-image:url(../images/bullet1.gif);
+}
+.gray11px{
+	color:#898989;
+	font-size:11px;
+}
+.left_link_bg{
+	background-image:url(../images/left_link_bg.gif);
+	background-repeat:repeat-x;
+}
+.left_link a{
+	display:block;
+	padding:8px;
+	color:#4f4f4f;
+	text-decoration:none;
+	background-image:url(../images/dot_horz.gif);
+	background-repeat:repeat-x;
+	background-position:bottom;
+}
+.left_link .title{
+	color:#4f4f4f;
+	text-decoration:none;
+	font-weight:bold;
+}
+.left_link a:hover{
+	color:#FF0000;
+}
+.top_secondary_link{
+	background-image:url(../images/left_link_bg.gif);
+	background-repeat:repeat-x;
+	padding:3px;
+	margin-bottom:10px;
+}
+
+.top_secondary_link a{
+	font-family:verdana;
+	font-size:11px;
+}
+.top_secondary_link a:hover{
+	color:#FF0000;
+}
+.textbox{
+	border:#c3c3b8 1px solid
+}
+input{
+	vertical-align:middle;
+}
+select{
+	vertical-align:middle;
+}
+.image_btn1{
+	background-image:url(../images/btn_login.gif);
+	background-repeat:no-repeat;
+	color:#FFFFFF;
+	background-color:#ECECDE;
+	font-size:12px;
+	font-family:verdana;
+	font-weight:bold;
+	width:105px;
+	height:30px;
+	border:0px;
+	padding:0px;
+	padding-right:10px;
+	padding-bottom:4px;
+	margin:0px;
+}
+
+.image_btn{
+	background-image:url(../images/btn_bg_m.gif);
+	background-repeat:no-repeat;
+	color:#FFFFFF;
+	background-color:#FFFFFF;
+	font-size:12px;
+	font-family:verdana;
+	font-weight:bold;
+	width:105px;
+	height:30px;
+	border:0px;
+	padding:0px;
+	padding-right:10px;
+	padding-bottom:4px;
+	margin:0px;
+}
+.step{
+	border:1px solid #EFEFE3; 
+	float:right;
+	padding:3px;
+	font-weight:bold;
+	color:#668EEF;
+	background-color:#EFEFE3;
+}
+.border{
+	border:1px solid #627ebc;
+}
+.imgborder{
+	background-image:url(../images/dot_horz.gif);
+	background-repeat:repeat-x;
+}
+.pageTitle{
+	font-family:verdana;
+	color:#898989; 
+	font-size:20px;
+}
+.listing td{
+	background-image:url(../images/dot_horz.gif);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.notdborder td{
+	border:0px;
+	background-image:url(../images/pix.gif);
+	padding:0px;
+}
+.cptable .heading td{
+	background-color:#EFEFE2;
+	font-weight:bold;
+	padding-left:5px;
+	padding-right:5px;
+	height:25px;
+	border-bottom:1px solid #627ebc;
+}
+.cptable td{
+
+	padding-left:5px;
+	padding-right:5px;
+	height:25px;
+	border-bottom:1px solid #EFEFE2;
+}
+.mandatory{
+	color:#FF0000;
+	font-family:verdana;
+	font-size:15px;
+	display:inline-block;
+	border:0px solid #333333;
+
+	padding-top:5px;
+	vertical-align:middle;
+}
+
+.linkBoldUnderline
+{
+	font-weight:bold;
+	text-decoration:underline;
+	
+}
+
+
+/*******************User Contorl LeftMenu**************************/
+
+div .header
+{
+	width:155px; 
+	height:25px;
+	margin-top:10px;
+	padding:5px;
+	color:#FFFFFF;
+	padding-top:5px; 
+	text-align:center; 
+	background-image: url(../images/top_link_bg.gif)
+}
+
+div .top10ContentList
+{
+	width:145px;
+	padding-left:5px;
+}
+
+div.collapsePanel
+{
+	overflow:hidden;
+	height:0px;
+}
+
+/*******************Css for ItemList_Book  START*****************/
+div.itemListImage
+{
+	
+	
+	height:115px;
+	width:115px;
+	padding:10px;
+	font-family:Verdana;
+	
+	float: left;
+}
+
+div.itemListDescription
+{
+	width:410px; 
+	height:115px; 
+	margin-left:10px; 
+	padding:10px; 
+	float:left;
+
+}
+
+span.title
+{
+	font-weight:bold; 
+	font-family:Verdana,Helvetica,sans-serif;
+	color:#003399; 
+	font-size:14px;
+}
+div.productTitle
+{
+	width:410px;
+	line-height:25px;
+
+	
+}
+/*******************Css for ItemList_Book  END*****************/
+
+
+
+
+/*****************Css For ItemDetail_Book Start*****************/
+
+div.itemDetailTopContainer
+{
+	width:625px; 
+	height:280px; 
+	margin-top:0px;
+}
+
+div.imageDetailContainer
+{
+	width:230px; 
+	height:230px; 
+	font-family:Verdana; 
+	margin:5px; 
+	margin-left:0px;
+	padding:10px; 
+	padding-left:0px;
+	float:left; 
+	
+}
+
+
+div.headerDetailContainer 
+{
+	width:355px; 
+	height:240px; 
+	margin-left:10px;
+	padding:0px; 
+	float: left;
+	color:Black;
+}
+
+
+
+div.detailFooterContainer
+{
+	width:620px; 
+	height:100%; 
+	padding: 0px;
+	clear:both;
+} 
+
+div.cartContainer
+{
+	width:190px;
+	height:150px;
+	margin:0px;
+	margin-left:5px; 
+	padding:5px; 
+	float: left;
+}
+div.miscLine
+{
+	font-family:Verdana;
+	font-size:12px;
+	color:Black;
+	line-height:20px;
+}
+div.itemDetailComments
+{
+	width:620px; 
+	padding:10px;
+}
+div.productDescription 
+{
+
+color:Black;
+line-height:18px;
+padding:5px;
+text-align:left;
+font-family:Verdana;
+font-size:12px;
+width:600px;
+clear:both;
+}
+
+p.formatParagra8ph
+{
+	
+	word-break:break-all; 
+	word-wrap:normal; 
+	width:550px;
+}
+	
+.colortitle
+{
+color: #CC6600;
+}
+
+span.titleHeader 
+{
+	font-weight:bold; 
+	color:#003399; 
+	font-size:14px;
+	font-family: verdana;
+}
+
+
+
+
+
+/*****************Css For ItemDetail_Book End*****************/
+
+div.leftContainer /* used to align labels/ txtbox in*/
+{
+	margin:3px 5px 3px 0px ;
+	padding:0px;
+	height:25px;
+}
+div.rightContainer /* used to align labels/ txtbox in*/
+{
+	margin:5px 5px 5px 0px ;
+	padding:0px;
+	height:25px;
+}
+
+/************************ShoppingCart****************************/
+
+.ShoppingCartTitle
+{
+color: Red;
+font-family: Verdana, Helvetica, sans-serif;
+font-size: 16px;
+}
+
+
+
+
+/************************ShoppingCart DIV START****************************/
+table.cartBox td.bottomLeft 
+{
+background-image:url(../Images/CartBackgroundImage.png);
+background-position:left bottom;
+background-repeat:no-repeat;
+font-size:4px;
+}
+
+table.cartBox td.bottomRight {
+background-image:url(../Images/CartBackgroundImage.png);
+background-position:right bottom;
+background-repeat:no-repeat;
+font-size:4px;
+}
+
+table.cartBox td.topRight {
+background-image:url(../Images/CartBackgroundImage.png);
+background-position:right top;
+background-repeat:no-repeat;
+}
+
+
+table.cartBox td.topLeft {
+background-image:url(../Images/CartBackgroundImage.png);
+background-position:left top;
+background-repeat:no-repeat;
+padding-left:12px;
+padding-top:12px;
+}
+/************************ShoppingCart DIV END****************************/
+
+
+
+.price 
+{
+	color:#990000;
+	font-weight:bold;
+	font-family:verdana;
+}
+
+.columnheader td.priceHeader
+{
+border-left:1px solid #999999;
+border-right:1px solid #DDDDDD;
+color:#000000;
+font-family:verdana,arial,helvetica,sans-serif;
+
+}
+
+.itemContainer
+{
+	height:137px;
+	text-align:left; 
+	padding:6px 6px 6px 10px;
+}
+
+.productCondition
+{
+	font-weight:bold;
+	font-family:verdana,arial,helvetica,sans-serif;
+}
+
+.sellerInfo
+{
+	font-weight:bold;
+	font-size:12px;
+	font-family:verdana,arial,helvetica,sans-serif;
+}
+
+
+/**********************************UsedAndNew_Books*********************************************/
+

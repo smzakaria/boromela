@@ -1,0 +1,96 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MPCommon.master.cs" Inherits="Common_MPCommon" %>
+
+
+<%@ Register Src="../UserControl/HomePageBottom.ascx" TagName="HomePageBottom" TagPrefix="uc1" %>
+<%@ Register Src="../UserControl/BookList_LeftMenu.ascx" TagName="BookList_LeftMenu" TagPrefix="uc2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+     <title>www.boromela.com</title>
+    <link href="../CSS/style.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/table.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/AjaxControl.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                    <img src="../images/logo.gif" width="260" height="91" alt="" />
+                </td>
+                <td></td>
+                <td width="120px" valign="top">
+                    <table width="120px" border="0" cellspacing="0" cellpadding="0">
+                        <tr >
+                            <td style="width: 5px">
+                                &nbsp
+                            </td>
+                            
+                            <td  align="right" valign="bottom">
+                            
+                            <asp:Label ID="lblLocation" runat="server" Width="100px" ToolTip="Change Country">
+                            </asp:Label>
+                            
+                            </td>
+                            <td width="5">
+                                &nbsp
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" class="top_links">
+            <tr>
+                <td width="5" valign="middle">
+                    <img alt="" src="../images/top_link_left.gif" width="5" height="41" /></td>
+                <td style="width: 753px">
+                    <div>
+                        <a href="../Default.aspx">Home</a> 
+                        <a href="../Corporate/Default.aspx">For Seller</a>
+                        <a href="../Classifieds_Buyers.aspx">For Buyers</a> 
+                        <a href="../MyBoromelaLogin.aspx">My Boromela</a> 
+                        
+                        <a href="../Classifieds/Default.aspx">
+                                <img alt="" src="../images/free_2.gif" width="37" height="28" border="0" class="free" />Post
+                                Classified Ad.</a> <a href="#">Help</a>
+                    </div>
+                </td>
+                <td width="235">
+                <a title="shopping cart" rel="nofollow" href="ShoppingCart.aspx" target="_top">
+                    <span style="color:White; font-family:Verdana; font-weight:bold;">
+                    Your Cart
+                    </span>
+                </a>
+                
+                    <!--input name="site_search" type="text" id="site_search" value="Search" class="top_search" /-->
+                    <!--input type="image" src="images/search_right.gif" width="25" height="23" style="vertical-align: middle;" /-->
+                </td>
+                <td width="5">
+                    <img alt="" src="../images/top_link_right.gif" width="5" height="41" /></td>
+            </tr>
+        </table>
+        <table width="1000px" cellpadding="0px" cellspacing="0px" align="center">
+            <tr>
+                <td style="width: 180px" valign="top">
+                <uc2:BookList_LeftMenu ID="BookList_LeftMenu1" runat="server" />
+                </td>
+                <td valign="top" width="820px" style="padding-left:15px; padding-top: 10px; padding-right: 5px;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding-top:15px">
+                    <uc1:HomePageBottom ID="HomePageBottom1" runat="server" />
+                </td>
+                
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
